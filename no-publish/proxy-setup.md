@@ -112,7 +112,7 @@ For Running [Discord](https://discord.com/) through a Proxy Server :
   Its better to add proxy server in its `wrapper` which is an updater:
 
   ```bash
-  ls -l /usr/bin/Discord 
+  ls -l /usr/bin/Discord
   lrwxrwxrwx. 1 root root 27 Sep 18 03:30 /usr/bin/Discord -> ../lib64/discord/wrapper.sh
   ```
 

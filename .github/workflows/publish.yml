@@ -25,7 +25,7 @@ jobs:
       GIT_COMMITTER_EMAIL: "a.mehraji75@gmail.com"
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v6
     - name: Publish articles on dev.to
       uses: sinedied/publish-devto@v2
       id: publish_devto
