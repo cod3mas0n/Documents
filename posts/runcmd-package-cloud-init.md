@@ -41,6 +41,17 @@ So even though `runcmd` appears in the Config stage, the commands you place unde
 
 By the time the `scripts_user` module runs (in the Final stage), the `qemu-guest-agent` is installed, `qemu-guest-agent.service` exists and `systemctl enable --now` will be succeed.
 
+The runcmd scripts will be written in `/var/lib/cloud/instance/scripts/runcmd` in the instance.
+
+```bash
+cat /var/lib/cloud/instance/scripts/runcmd
+
+#!/bin/sh
+systemctl enable --now qemu-guest-agent
+```
+
+</br>
+
 `cloud-config` Example:
 
 ```yaml
