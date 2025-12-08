@@ -1,13 +1,13 @@
 ---
-title: runcmd and package in Cloud-Init
+title: runcmd and package order in Cloud-Init
 published: true
 description: runcmd and package oreder in cloud-init. conflict in a case ?!
-tags: 'qemu,virtualization,devops,cloudinit'
+tags: 'qemu,virtualization,cloudinit,devops'
 id: 3090956
 date: '2025-12-08T00:45:58Z'
 ---
 
-How is it possible to run a command via `runcmd` before installing its related package in Cloud-Init?
+How is it possible to run a command via `runcmd` before installing its related package via `packages` in Cloud-Init? Which one runs first ?
 
 In a Cloud-Init configuration, it may look strange that a command referencing a service can run before the package providing that service is installed. For example:
 
