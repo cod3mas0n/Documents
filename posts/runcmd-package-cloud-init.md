@@ -2,7 +2,7 @@
 title: runcmd and package in Cloud-Init
 published: true
 description: runcmd and package oreder in cloud-init. conflict in a case ?!
-tags: 'qemu,virtualization,devops,cloudinit,cloud'
+tags: 'qemu,virtualization,devops,cloudinit'
 ---
 
 How is it possible to run a command via `runcmd` before installing its related package in Cloud-Init?
