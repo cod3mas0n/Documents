@@ -29,7 +29,7 @@ In this setup, commonly used when provisioning VMs with Terraform’s [libvirt p
 
 So how can Cloud-Init run `systemctl enable --now qemu-guest-agent.service` before the package exists?
 
-The sentence “The [runcmd][runcmd-doc] module runs very late in the boot process” can be confusing at first glance, because in Cloud-Init’s documented module stages, `runcmd` appears in the [Config stage][boot-stages] while package installation happens in the Final stage.
+The sentence “The [runcmd][runcmd-doc] module runs very late in the boot process” can be confusing at first glance, because in Cloud-Init’s documented module stages, `runcmd` appears in the [Config stage][boot-stages] while package installation via `packages` happens in the Final stage.
 
 It looks like `runcmd` runs before packages are installed and it wont work.
 
