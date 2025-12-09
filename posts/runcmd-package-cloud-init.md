@@ -99,9 +99,16 @@ packages:
 
 ```
 
-[cloud-init]:https://cloudinit.readthedocs.io/en/latest/index.html
-[tf-libvirt-provider]:https://registry.terraform.io/providers/dmacvicar/libvirt/latest/docs
-[ansible-dynamic-inv]:https://github.com/cod3mas0n/qemu-kvm-terraform/blob/main/dynamic-inventory.py
-[runcmd-doc]:https://cloudinit.readthedocs.io/en/latest/reference/modules.html#runcmd
-[scripts-user]:https://cloudinit.readthedocs.io/en/latest/reference/modules.html#scripts-user
-[boot-stages]:https://cloudinit.readthedocs.io/en/latest/explanation/boot.html
+## Resources
+
+- [Cloud-Init: Building clouds][yt-cloud-init-building-clouds]
+- [Cloud-Init][cloud-init]
+- [terraform libvirt provider][tf-libvirt-provider]
+
+[cloud-init]: https://cloudinit.readthedocs.io/en/latest/index.html
+[tf-libvirt-provider]: https://registry.terraform.io/providers/dmacvicar/libvirt/latest/docs
+[ansible-dynamic-inv]: https://github.com/cod3mas0n/qemu-kvm-terraform/blob/main/dynamic-inventory.py
+[runcmd-doc]: https://cloudinit.readthedocs.io/en/latest/reference/modules.html#runcmd
+[scripts-user]: https://cloudinit.readthedocs.io/en/latest/reference/modules.html#scripts-user
+[boot-stages]: https://cloudinit.readthedocs.io/en/latest/explanation/boot.html
+[yt-cloud-init-building-clouds]: https://youtu.be/1joQfUZQcPg
