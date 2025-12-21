@@ -208,6 +208,7 @@ kubectl delete pod node-debugger-debian-11-wrjhs
 - Tasks
   - [Debugging with an ephemeral debug container][k8s-docs-debug-pod]
   - [Copy Files To/From a Running Kubernetes Pod: a Distroless Image Case][ix-task-copy-files-to-from-distroless-kubernetes-pod]
+  - [Run a Sidecar Container in the Namespace of Another Container][ix-task-docker-container-share-namespaces]
 
 [ix-posts-ephemeral-containers]: https://iximiuz.com/en/posts/kubernetes-ephemeral-containers/
 [ephemeral-ctr-tshoot]: https://www.vcluster.com/blog/using-kubernetes-ephemeral-containers-for-troubleshooting
@@ -223,6 +224,7 @@ kubectl delete pod node-debugger-debian-11-wrjhs
 
 [k8s-docs-debug-pod]: https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/#ephemeral-container
 [ix-task-copy-files-to-from-distroless-kubernetes-pod]: https://labs.iximiuz.com/challenges/copy-files-to-from-distroless-kubernetes-pod
+[ix-task-docker-container-share-namespaces]:https://labs.iximiuz.com/challenges/docker-container-share-namespaces
 
 [ephemeral-ctrs-feature-request]: https://github.com/kubernetes/enhancements/issues/277
 [FR: New kubectl command]: https://github.com/kubernetes/kubernetes/issues/45922

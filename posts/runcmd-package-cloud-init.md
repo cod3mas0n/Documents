@@ -6,6 +6,9 @@ tags: 'qemu,virtualization,cloudinit,devops'
 id: 3090956
 date: '2025-12-08T00:45:58Z'
 ---
+During boot, cloud-init identifies the cloud it is running on and initializes the system accordingly. Cloud instances will automatically be provisioned during first boot with networking, storage, SSH keys, packages and various other system aspects already configured.
+
+running Cloud-Init is the job of the `cloud-init-local`, `cloud-init`, `cloud-config` and `cloud-final` init scripts in `/etc/init.d`. Cloud-Init can be configured to carry out a wide range of tasks such as adding `yum` or `apt` repositories, writing files, creating users and groups, and bootstrapping configuration management.
 
 How is it possible to run a command via `runcmd` before installing its related package via `packages` in Cloud-Init? Which one runs first ?
 
@@ -104,6 +107,8 @@ packages:
 - [Cloud-Init: Building clouds][yt-cloud-init-building-clouds]
 - [Cloud-Init][cloud-init]
 - [terraform libvirt provider][tf-libvirt-provider]
+- [Cloud-Init configuration merging][cloudinit-configuration-merging]
+- [First Boot Determination][first-boot-detect]
 
 [cloud-init]: https://cloudinit.readthedocs.io/en/latest/index.html
 [tf-libvirt-provider]: https://registry.terraform.io/providers/dmacvicar/libvirt/latest/docs
@@ -112,3 +117,5 @@ packages:
 [scripts-user]: https://cloudinit.readthedocs.io/en/latest/reference/modules.html#scripts-user
 [boot-stages]: https://cloudinit.readthedocs.io/en/latest/explanation/boot.html
 [yt-cloud-init-building-clouds]: https://youtu.be/1joQfUZQcPg
+[cloudinit-configuration-merging]:https://jen20.dev/post/cloudinit-configuration-merging/
+[first-boot-detect]:https://cloudinit.readthedocs.io/en/latest/explanation/first_boot.html#first-boot-determination
