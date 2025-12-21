@@ -3,7 +3,7 @@ title: Alertmanager with Telegram for Prometheus-Stack in K8S
 published: true
 description: Add Telegram Receiver for alertmanager for prometheus-stack in k8s cluster
 tags: 'alertmanager,prometheus,monitoring,kubernetes'
-cover_image: 'https://raw.githubusercontent.com/AliMehraji/Documents/refs/heads/main/posts/assets/alertmanager-to-telegram.webp'
+cover_image: 'https://raw.githubusercontent.com/cod3mas0n/Documents/refs/heads/main/posts/assets/alertmanager-to-telegram.webp'
 canonical_url: null
 id: 2320569
 date: '2025-03-09T12:06:12Z'

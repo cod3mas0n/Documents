@@ -3,7 +3,7 @@ title: Kubernetes Ephemeral Containers and kubectl debug Command
 published: true
 description: Deep Diving Kubernetes Ephemeral Containers and kubectl debug Command
 tags: kubernetes
-cover_image: 'https://raw.githubusercontent.com/AliMehraji/Documents/refs/heads/main/posts/assets/k8s-debug-ctr-in-pod-shared-ns.webP'
+cover_image: 'https://raw.githubusercontent.com/cod3mas0n/Documents/refs/heads/main/posts/assets/k8s-debug-ctr-in-pod-shared-ns.webP'
 canonical_url: null
 id: 2795240
 date: '2025-08-23T22:29:01Z'
@@ -81,6 +81,10 @@ error: Internal error occurred: Internal error occurred: error executing command
 ```
 
 ### `kubectl debug`
+
+![](https://raw.githubusercontent.com/cod3mas0n/Documents/refs/heads/main/posts/assets/kubectl-debug/cdebug-slide-4.webp "Kubectl debug")
+
+![](https://raw.githubusercontent.com/cod3mas0n/Documents/refs/heads/main/posts/assets/kubectl-debug/cdebug-slide-5.webp "debuger endpoint")
 
 ```bash
 POD_NAME=$(kubectl get pods -l app=distroless-nginx -o jsonpath='{.items[0].metadata.name}')
@@ -188,6 +192,20 @@ Don't forget to clean up the debugging Pod when you're finished with it:
 kubectl delete pod node-debugger-debian-11-wrjhs
 ```
 
+### Sidecar container via Docker
+
+![](https://raw.githubusercontent.com/cod3mas0n/Documents/refs/heads/main/posts/assets/kubectl-debug/cdebug-slide-3.webp "docker exec ,sidecar")
+
+How `docker exec` and [`cdebug`](https://github.com/iximiuz/cdebug) works ?
+
+How to reproduce the docker exec-like functionality with the docker run command by starting a new container in the target container's namespaces:
+
+```bash
+docker run -itd --name sidecar --pid container:target --ipc container:target --network container:target alpine sh
+```
+
+[Docker Debug](https://docs.docker.com/reference/cli/docker/debug/)
+
 ## Resources
 
 - [Docker Containers vs. Kubernetes Pods - Taking a Deeper Look][ix-posts-containers-vs-pods]
@@ -229,8 +247,8 @@ kubectl delete pod node-debugger-debian-11-wrjhs
 [ephemeral-ctrs-feature-request]: https://github.com/kubernetes/enhancements/issues/277
 [FR: New kubectl command]: https://github.com/kubernetes/kubernetes/issues/45922
 
-[shared-ns-img]: https://raw.githubusercontent.com/AliMehraji/Documents/refs/heads/main/posts/assets/k8s-debug-ctr-in-pod-shared-ns.webP
-[after-ns-shared]: https://raw.githubusercontent.com/AliMehraji/Documents/refs/heads/main/posts/assets/ctr-in-pod-shared-pid-ns.WebP
+[shared-ns-img]: https://raw.githubusercontent.com/cod3mas0n/Documents/refs/heads/main/posts/assets/k8s-debug-ctr-in-pod-shared-ns.webP
+[after-ns-shared]: https://raw.githubusercontent.com/cod3mas0n/Documents/refs/heads/main/posts/assets/ctr-in-pod-shared-pid-ns.WebP
 
 [debugging-profiles]: https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/#debugging-profiles
 

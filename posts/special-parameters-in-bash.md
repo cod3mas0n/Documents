@@ -3,7 +3,7 @@ title: Special $@ and $* Parameters in bash
 published: true
 description: Difference between Special $@ and $* Parameters in bash.
 tags: 'bash,gnulinux,linux'
-cover_image: 'https://raw.githubusercontent.com/AliMehraji/Documents/refs/heads/main/posts/assets/special-parameters-in-bash.webp'
+cover_image: 'https://raw.githubusercontent.com/cod3mas0n/Documents/refs/heads/main/posts/assets/special-parameters-in-bash.webp'
 canonical_url: null
 id: 2319639
 date: '2025-03-08T22:48:26Z'

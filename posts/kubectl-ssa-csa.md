@@ -3,7 +3,7 @@ title: TIL Kubectl CSA/SSA (Client/Server Side Apply)
 published: true
 description: digging the server side apply and client side apply
 tags: 'kubernetes,devops,k8s'
-cover_image: 'https://raw.githubusercontent.com/AliMehraji/Documents/refs/heads/main/posts/assets/kubectl-ssa-csa/kubectl-ssa-csa.webp'
+cover_image: 'https://raw.githubusercontent.com/cod3mas0n/Documents/refs/heads/main/posts/assets/kubectl-ssa-csa/kubectl-ssa-csa.webp'
 id: 2566618
 date: '2025-06-05T14:39:43Z'
 ---
@@ -378,6 +378,6 @@ Kubernetes cluster deployed with Kubespray and added to a rancher cluster manual
 [imperative-endpoints]: https://youtu.be/1DWWlcDUxtA?t=638
 [field-managers]: https://kubernetes.io/docs/reference/using-api/server-side-apply/#managers
 [ssa-in-controller]: https://kubernetes.io/docs/reference/using-api/server-side-apply/#using-server-side-apply-in-a-controller
-[cnflicts-image]: https://raw.githubusercontent.com/AliMehraji/Documents/refs/heads/main/posts/assets/kubectl-ssa-csa/conflict.webp
-[netshoot-deployment]: https://raw.githubusercontent.com/AliMehraji/Documents/refs/heads/main/posts/assets/kubectl-ssa-csa/manifests/netshoot-deployment.yaml
+[cnflicts-image]: https://raw.githubusercontent.com/cod3mas0n/Documents/refs/heads/main/posts/assets/kubectl-ssa-csa/conflict.webp
+[netshoot-deployment]: https://raw.githubusercontent.com/cod3mas0n/Documents/refs/heads/main/posts/assets/kubectl-ssa-csa/manifests/netshoot-deployment.yaml
 [argocd-and-hpa]: https://argo-cd.readthedocs.io/en/stable/user-guide/sync-options/#respect-ignore-difference-configs

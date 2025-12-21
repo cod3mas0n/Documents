@@ -375,6 +375,6 @@ The [Dockerfile][dockerfile-no-new-syntax] with no new syntax and manipulating t
 [cache-mount]: https://docs.docker.com/build/cache/optimize/#use-cache-mounts
 [copy-virtual-env]: https://pythonspeed.com/articles/multi-stage-docker-python/
 [pod-security-context]: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#supplementalgroupspolicy
-[dockerfile-no-new-syntax]: https://github.com/AliMehraji/Dockerfiles/blob/main/Offline-Dockerfiles/Dockerfile
+[dockerfile-no-new-syntax]: https://github.com/cod3mas0n/Dockerfiles/blob/main/Offline-Dockerfiles/Dockerfile
 [secret-mount]: https://docs.docker.com/build/building/secrets/#secret-mounts
 [python-env-var-in-dockerfile]: https://dev.to/alimehr75/python-env-variables-in-dockerfile-5920
