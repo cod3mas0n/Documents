@@ -82,9 +82,9 @@ error: Internal error occurred: Internal error occurred: error executing command
 
 ### `kubectl debug`
 
-![](https://raw.githubusercontent.com/cod3mas0n/Documents/refs/heads/main/posts/assets/kubectl-debug/cdebug-slide-4.webp "Kubectl debug")
+![kubectl debug](https://raw.githubusercontent.com/cod3mas0n/Documents/refs/heads/main/posts/assets/kubectl-debug/cdebug-slide-4.webp "Kubectl debug")
 
-![](https://raw.githubusercontent.com/cod3mas0n/Documents/refs/heads/main/posts/assets/kubectl-debug/cdebug-slide-5.webp "debuger endpoint")
+![debugger endpoint](https://raw.githubusercontent.com/cod3mas0n/Documents/refs/heads/main/posts/assets/kubectl-debug/cdebug-slide-5.webp "debugger endpoint")
 
 ```bash
 POD_NAME=$(kubectl get pods -l app=distroless-nginx -o jsonpath='{.items[0].metadata.name}')
@@ -194,7 +194,7 @@ kubectl delete pod node-debugger-debian-11-wrjhs
 
 ### Sidecar container via Docker
 
-![](https://raw.githubusercontent.com/cod3mas0n/Documents/refs/heads/main/posts/assets/kubectl-debug/cdebug-slide-3.webp "docker exec ,sidecar")
+![docker exec](https://raw.githubusercontent.com/cod3mas0n/Documents/refs/heads/main/posts/assets/kubectl-debug/cdebug-slide-3.webp "docker exec ,sidecar")
 
 How `docker exec` and [`cdebug`](https://github.com/iximiuz/cdebug) works ?
 
