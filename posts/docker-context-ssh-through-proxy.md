@@ -3,6 +3,8 @@ title: Docker Remote Context via SSH over Proxy
 published: true
 description: how to connect to remote docker host via ssh over proxy
 tags: 'docker,devops,ssh,linux'
+id: 3123608
+date: '2025-12-23T22:26:32Z'
 ---
 
 Securely manage a remote Docker daemon over SSH using Docker contexts, with SSH traffic routed through a SOCKS5 proxy.
