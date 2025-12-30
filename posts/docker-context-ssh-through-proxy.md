@@ -13,7 +13,7 @@ If you want to connect to and manage a remote Docker daemon without exposing the
 
 By configuring SSH to use a proxy and defining a Docker context that targets the remote host via SSH, Docker commands executed locally are transparently forwarded to the remote Docker daemon. This allows you to use standard Docker workflows (`docker ps`, `docker compose`, `docker build`) as if the daemon were local, while still benefiting from SSH key authentication, proxy enforcement, and connection `keepalive` mechanisms.
 
-### SSH Configuration
+## SSH Configuration
 
 To connect to a remote server via SSH through a proxy, `ProxyCommand` is used together with `nc` (`netcat`). All SSH connections to the remote host are routed through the specified SOCKS5 (it could be HTTP) proxy.
 
@@ -38,7 +38,7 @@ Host vps-docker
 - `ProxyCommand`: forces SSH traffic to pass through a local SOCKS5 proxy (e.g. a VPN tunnel).
 - `PreferredAuthentications publickey`: Specifies that SSH should prefer (and effectively enforce) public key–based authentication instead of password-based authentication when connecting to the host.
 
-### Docker Context
+## Docker Context
 
 Docker can connect to the remote Docker daemon over SSH.</br>
 The SSH connection itself is routed through the configured SOCKS5 proxy , ensuring all Docker traffic to the remote host passes through the proxy.
