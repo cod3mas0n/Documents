@@ -227,6 +227,7 @@ docker run -itd --name sidecar --pid container:target --ipc container:target --n
   - [Debugging with an ephemeral debug container][k8s-docs-debug-pod]
   - [Copy Files To/From a Running Kubernetes Pod: a Distroless Image Case][ix-task-copy-files-to-from-distroless-kubernetes-pod]
   - [Run a Sidecar Container in the Namespace of Another Container][ix-task-docker-container-share-namespaces]
+  - [Edit a File in a Running Kubernetes Pod: a Tricky Case][edit-a-file-in-a-running-kubernetes-pod]
 
 [ix-posts-ephemeral-containers]: https://iximiuz.com/en/posts/kubernetes-ephemeral-containers/
 [ephemeral-ctr-tshoot]: https://www.vcluster.com/blog/using-kubernetes-ephemeral-containers-for-troubleshooting
@@ -254,3 +255,4 @@ docker run -itd --name sidecar --pid container:target --ipc container:target --n
 
 [kubectl-debug-node]: https://kubernetes.io/docs/tasks/debug/debug-cluster/kubectl-node-debug/
 [shell-debug-on-node]: https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/#node-shell-session
+[edit-a-file-in-a-running-kubernetes-pod]: https://labs.iximiuz.com/challenges/edit-file-in-running-kubernetes-pod
