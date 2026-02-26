@@ -7,9 +7,9 @@ id: 3289115
 date: '2026-02-26T20:18:46Z'
 ---
 
-### Why
+### Overview
 
-Since Prometheus-Stack Alertmanager doesn’t include Mattermost as a built-in receiver, we will integrate it using a webhook via creating a Python relay application that accepts Alertmanager webhook notifications, formats them into a Mattermost-compatible payload, and sends them to a Mattermost incoming webhook URL.
+Since `Prometheus-Stack` `Alertmanager` doesn’t include `Mattermost` as a built-in receiver, we will integrate it using a `webhook` via creating a Python relay application that accepts `Alertmanager` webhook notifications, formats them into a Mattermost-compatible payload, and sends them to a Mattermost incoming webhook URL.
 
 Then we will deploy this relay inside Kubernetes using a Deployment and expose it with a Service so Alertmanager can reliably reach it.
 
@@ -22,7 +22,6 @@ Finally, we will configure Alertmanager using an AlertmanagerConfig resource to 
 - Alertmanager sends webhook notifications to the Python Relay Service.
 - The relay formats the alert payload.
 - The relay forwards the formatted message to Mattermost Incoming Webhook.
-- Alerts appear in the designated Mattermost channel.
 
 ### Steps
 
@@ -51,6 +50,12 @@ Finally, we will configure Alertmanager using an AlertmanagerConfig resource to 
         matchLabels:
             alertmanagerConfig: alertmanager-mattermost
     ⋮
+    ```
+
+    And then do `helm upgrade` to prometheus operator selects the alertmanagerConfig and route alerts.
+
+    ```bash
+    helm upgrade --install prometheus prometheus-community/kube-prometheus-stack -f values.yaml
     ```
 
 [mattermost-incoming-webhook]:https://docs.mattermost.com/integrations-guide/incoming-webhooks.html
