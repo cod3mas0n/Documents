@@ -45,9 +45,9 @@ Finally, we will configure Alertmanager using an AlertmanagerConfig resource to 
     ```yaml
     ⋮
     alertmanager:
-    alertmanagerSpec:
+      alertmanagerSpec:
         alertmanagerConfigSelector:
-        matchLabels:
+          matchLabels:
             alertmanagerConfig: alertmanager-mattermost
     ⋮
     ```
