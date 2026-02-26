@@ -3,6 +3,8 @@ title: Mattermost Receiver For Alertmanager in Prometheus-Stack in K8S
 published: true
 description: Add Mattermost Receiver for alertmanager in prometheus-stack in k8s
 tags: 'alertmanager,prometheus,monitoring,kubernetes'
+id: 3289115
+date: '2026-02-26T20:18:46Z'
 ---
 
 ### Why
