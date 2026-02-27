@@ -314,7 +314,7 @@ kubectl apply -f alertmanagerconfig-telegram.yaml -n prometheus
 
   ```yaml
   alertmanager:
-  alertmanagerSpec:
+    alertmanagerSpec:
       ## Defines the strategy used by AlertmanagerConfig objects to match alerts. eg:
       ##
       alertmanagerConfigMatcherStrategy:

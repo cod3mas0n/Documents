@@ -49,6 +49,8 @@ Finally, we will configure Alertmanager using an AlertmanagerConfig resource to 
         alertmanagerConfigSelector:
           matchLabels:
             alertmanagerConfig: alertmanager-mattermost
+        alertmanagerConfigMatcherStrategy:
+          type: None
     ⋮
     ```
 
