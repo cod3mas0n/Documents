@@ -1,0 +1,20 @@
+title: Documents
+description: Technical notes and tutorials
+url: https://cod3mas0n.github.io
+baseurl: /
+
+markdown: kramdown
+theme: null
+permalink: /posts/:title/
+
+defaults:
+  - scope:
+      path: "posts"
+    values:
+      layout: post
+
+exclude:
+  - no-publish
+  - README.md
+  - Gemfile
+  - Gemfile.lock

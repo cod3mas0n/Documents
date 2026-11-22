@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <style>
+      body { max-width: 52rem; margin: 2rem auto; padding: 0 1rem; font: 1rem/1.6 system-ui, sans-serif; color: #202124; }
+      a { color: #0969da; }
+      pre { overflow-x: auto; padding: 1rem; background: #f6f8fa; }
+      code { font-family: ui-monospace, monospace; }
+      img { max-width: 100%; height: auto; }
+      .meta { color: #57606a; }
+    </style>
+  </head>
+  <body>
+    <header><a href="{{ '/' | relative_url }}">{{ site.title }}</a></header>
+    <main>{{ content }}</main>
+  </body>
+</html>
