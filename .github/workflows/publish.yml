@@ -56,5 +56,5 @@ jobs:
           body: |
             Changes result:
             ```
-            ${{ steps.publish_devto.outputs.result_summary }}
+            ${{ needs.publish.outputs.result_summary }}
             ```
