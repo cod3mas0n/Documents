@@ -20,6 +20,9 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
     env:
       GIT_COMMITTER_NAME: "a.mehraji"
       GIT_COMMITTER_EMAIL: "a.mehraji75@gmail.com"
